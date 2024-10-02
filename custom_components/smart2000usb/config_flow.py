@@ -5,7 +5,7 @@ import logging
 
 _LOGGER = logging.getLogger(__name__)
 
-class Smart2000USBConfigFlow(config_entries.ConfigFlow, domain="smart2000usb"):
+class Smart2000USBConfigFlow(config_entries.ConfigFlow, domain="smart2000usb-naviop"):
     VERSION = 1
 
     async def async_step_user(self, user_input=None):
