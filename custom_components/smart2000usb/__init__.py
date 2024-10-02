@@ -3,7 +3,7 @@ from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 import logging
 
-DOMAIN = "smart2000usb"
+DOMAIN = "smart2000usb-naviop"
 
 _LOGGER = logging.getLogger(__name__)
 
