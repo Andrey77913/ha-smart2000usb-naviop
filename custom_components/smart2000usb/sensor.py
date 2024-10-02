@@ -111,7 +111,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry, async_add_e
     
     # Load the fast pgn json data 
     config_dir = hass.config.config_dir
-    json_path = os.path.join(config_dir, 'custom_components', 'smart2000usb', 'pgn_type.json')
+    json_path = os.path.join(config_dir, 'custom_components', 'smart2000usb-naviop', 'pgn_type.json')
     try:
         with open(json_path, "r") as file:
             smart_data = json.load(file)
@@ -594,7 +594,7 @@ class SmartSensor(Entity):
     def device_info(self):
         """Return device information about this sensor."""
         return {
-            "identifiers": {("smart2000usb", f"{self._instance_name}_{self._device_name}")},
+            "identifiers": {("smart2000usb-naviop", f"{self._instance_name}_{self._device_name}")},
             "name": self._device_name,
             "manufacturer": self._group,
             "model": self._sentence_type,
